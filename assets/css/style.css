@@ -587,8 +587,8 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top:  80px;
+	padding-bottom:  30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4024,8 +4024,8 @@ ul.counter-list li:nth-child(2) {
 .shape-extra {
 	position: absolute;
 	left: 0;
-	bottom: 30%;
-	max-width: 40%;
+	bottom:  0%;
+	max-width:auto;
 	opacity: 0.1;
 	z-index: -1;
 }
@@ -7728,3 +7728,71 @@ footer {
 		margin-left: 50px;
 	}
 }
+
+
+
+  @media (min-width: 776px) {
+	.img_pot{
+		margin-top: 55px;
+   }
+}  
+
+
+
+/* @media (max-width:576px) {
+	.only_for_xs{
+		display: block;
+	}
+	.not_for_xs{
+		display: none;
+	}
+} */
+
+ 
+ 
+
+
+@media (max-width: 575px) {
+   
+    .text_pot{
+		text-align: center;
+	}
+}  
+
+
+
+.half .col-6 ul {
+    padding-right: 15px; /* Adjust the value as needed */
+}
+
+
+.half .col-6:not(:last-child) {
+    margin-right: 55px; /* Adjust the value as needed */
+}
+
+
+
+
+.img_pot{
+	 margin-left: 30px;
+}
+
+/* Add styles to make social media icons larger */
+.footer-item .social i {
+    font-size: 30px; /* Adjust the size as needed */
+    margin-right: 50px; /* Adjust the spacing between icons as needed */
+}
+
+/* Align social media links side by side */
+.footer-item .social ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+	margin-left: 120px;
+}
+
+.footer-item .social li {
+    margin-right: 10px; /* Adjust the spacing between links as needed */
+}
+
+
