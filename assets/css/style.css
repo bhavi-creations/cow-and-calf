@@ -2555,7 +2555,7 @@ p {
 
 .top-bar-area ul li {
 	display: inline-block;
-	margin-right: 25px;
+	/* margin-right: 25px; */
 }
 
 .top-bar-area p {
@@ -2590,10 +2590,11 @@ p {
 	position: relative;
 	z-index: 1;
 }
-
+	
 .top-bar-area .container::after {
 	position: absolute;
 	right: 15px;
+ 
 	top: 0;
 	content: "";
 	height: 100%;
@@ -7796,3 +7797,11 @@ footer {
 }
 
 
+
+
+.green_section{
+	background-color: #1a4133;
+	
+	
+
+}
