@@ -1,0 +1,161 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="contact-form" action="contact_mail.php" method="post" >
+    <input type="text" name="name" id="name" placeholder="Your name" required>
+    <input type="text" name="surname" id="surname"  placeholder="Surname" required>
+    <input type="text" name="phone" id="phone" placeholder="Phone" required>
+    <input type="text" name="email" id="email" placeholder="E-mail" required>
+    <input type="text" name="city" id="city" placeholder="City" required>
+    <input type="text" name="state" id="state" placeholder="State" required>
+    <input type="text" name="subject" id="subject" placeholder="What is your contact reason" class="subject" required>
+    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+    <input type="submit" name="submit" value="SEND IT">
+  </form>
+  <div id="success">
+    <p>Your message was sent successfully! We will be in touch as soon as we can.</p>
+  </div>
+  <div id="error">
+    <p>Something went wrong, try refreshing and submitting the form again.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/jquery.stellar.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/queryloader2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.fancybox.js"></script> 
+<script src="js/jquery.maskedinput.js"></script> 
+<script src="js/jquery.ba-cond.min.js" type="text/javascript" ></script> 
+<script src="js/jquery.slitslider.js" type="text/javascript" ></script> 
+<script src="js/slider-settings.js"></script> 
+<script src="js/medicina.js"></script> 
+<script src="js/jquery.form.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script type="text/javascript">
+
+// validate contact form
+$(function() {
+	$("#contact-form").validate({
+    	rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+			surname: {
+                required: true,
+                minlength: 2
+            },
+			phone: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+			city: {
+                required: true,
+				minlength: 2
+            },
+			state: {
+                required: true,
+				minlength: 2
+            },
+            subject: {
+                required: true
+            },
+			message: {
+                required: true
+            }
+        },
+		messages: {
+            name: {
+                required: "Please type your name",
+                minlength: "Please type your name correctly"
+            },
+			surname: {
+                required: "Please type your surname",
+                minlength: "Please type your surname correctly"
+            },
+			phone: {
+                required: "Please type your phone number",
+                minlength: "Please type your phone number correctly"
+            },
+            email: {
+                required: "Please type your e-mail correctly"
+            },
+			city: {
+                required: "Please type your city",
+                minlength: "Please type your city correctly"
+            },
+			state: {
+                required: "Please type your state",
+                minlength: "Please type your state correctly"
+            },
+            subject: {
+                required: "Please type about subject",
+                minlength: "To short subject"
+            },
+			 message: {
+                required: "Please type your message",
+                minlength: "To short message"
+            }
+        },
+		submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                data: $(form).serialize(),
+                url:"conatactmail.php",
+                success: function() {
+                    $('#contact-form :input').attr('disabled', 'disabled');
+                    $('#contact-form').fadeTo( "slow", 0, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#success').fadeIn();
+                    });
+                },
+                error: function() {
+                    $('#contact-form').fadeTo( "slow", 0, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+            });
+        }
+    });
+});
+
+
+</script>
+
