@@ -4018,7 +4018,7 @@ ul.counter-list li:nth-child(2) {
 	content: "";
 	height: 30%;
 	width: 100%;
-	background: var(--dark);
+	/* background: var(--dark); */
 	z-index: -1;
 }
 
