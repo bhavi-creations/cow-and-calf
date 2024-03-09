@@ -13,7 +13,7 @@
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/cow&calf_logo1.png" type="image/x-icon">
-
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -42,6 +42,22 @@
     width:50px; /* Adjust size as needed */
     height: 50px; /* Adjust size as needed */
 }
+
+
+
+#scrollBtn {
+    display: none; /* Initially hide the button */
+    position: fixed; /* Fix the position of the button */
+    bottom: 20px; /* Adjust the bottom distance */
+    right: 20px; /* Adjust the right distance */
+    z-index: 999; /* Set a high z-index to ensure the button is on top */
+    padding: 10px 15px;
+    background-color: #f3ef1a;
+    color: black;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+  }
     </style>
 </head>
 
@@ -144,54 +160,39 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/Cow&Calf_logo.png" class="logo" style="width: 260px; height:  100px;" alt="Logo">
+                    <a class="navbar-brand " href="index.html">
+                        <img src="assets/img/products/cowandcalflogo.png" class="logo " style="width: 90px; height:  75px;" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Main Nav -->
-                <div class="main-nav-content">
+                <div class="main-nav-content m-auto">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
 
-                        <img src="assets/img/logo.png" alt="Logo">
+                        <a href="index.html"><img src="assets/img/products/cowandcalflogo.png" alt="Logo"></a>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-times"></i>
                         </button>
                         
-                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">ABOUT US</a></li>
+                        <ul class="nav navbar-nav navbar-right " data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="about.html" >ABOUT US</a></li>
                             <li><a href="products.html" style="color: green">PRODUCTS</a></li>
-                            <li><a href="quality.html">INFRASTRUCTURE</a></li>
-                            <li><a href="gallery.html">GALLERY</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="infrastructure.html" >INFRASTRUCTURE</a></li>
+                            <li><a href="gallery.html" >GALLERY</a></li>
+                            <li><a href="contact.html" >CONTACT US</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
 
-                    <div class="attr-right">
-                        <!-- Start Atribute Navigation -->
-                        <div class="attr-nav">
-                            <ul>
-                                <li class="contact">
-                                    <div class="call">
-                                        <div class="icon">
-                                            <i class="fas fa-comments-alt-dollar"></i>
-                                        </div>
-                                        <div class="info">
-                                            <p>Have any Questions?</p>
-                                            <h6><a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a></h6>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Atribute Navigation -->
-
+                   <div class="d-none d-lg-block " >
+                    <div class="d-flex flex-row justify-content-end ">
+                        <i class="fa-solid fa-envelope ms-5"  style="color:green;"></i>
+                        <h5 class="ms-2 " style="margin-top:-4px"><a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a></h6>
                     </div>
-
+                   </div>
                     <!-- Overlay screen for menu -->
                     <div class="overlay-screen"></div>
                     <!-- End Overlay screen for menu -->
@@ -776,13 +777,13 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Single Item -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                 <div class="services-style-one">
                                     <div class="thumb">
                                         <img src="assets/img/products/productpage_kurnool_Sortexed_Broken_Rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">
-                                        Kurnool Sortexed Broken Rice</a></h5>
+                                    <h5>
+                                        <strong>Kurnool Sortexed Broken Rice</strong></h5>
                                     <p>
                                         Experience the timeless perfection of our meticulously sorted raw rice grains.
                                     </p>
@@ -792,11 +793,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/productpageSpecial_Sona_Rice-removebg-preview.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Special Sona Rice</a></h5>
+                                    <h5><strong>Special Sona Rice</strong></h5>
                                     <p>
                                         Indulge in the richness of Kurnool Sona, sorted to perfection for your culinary delight.
                                     </p>
@@ -805,11 +806,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_sortexed_HMT_rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Sortexed HMT Rice</a></h5>
+                                    <h5><strong>Sortexed HMT Rice</strong></h5>
                                     <p>
                                         Elevate your meals with the unmatched quality of our carefully sorted HMT rice grains.
                                     </p>
@@ -818,11 +819,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_sortexed_broken_ricew.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Sortexed Broken Rice</a></h5>
+                                    <h5><strong>Sortexed Broken Rice</strong></h5>
                                     <p>
                                         Versatile and refined, our broken rice is sorted to perfection for various culinary creations.
                                     </p>
@@ -844,11 +845,11 @@
                         <div class="swiper-wrapper">
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productspage_10kg_sPure_Old_Sortexed_Raw_Rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">10kg's Pure Old Sortexed Raw Rice</a></h5>
+                                    <h5><strong>10kg's Pure Old Sortexed Raw Rice</strong></h5>
                                     <p>
                                         Enjoy the convenience of our 10kg pack, filled with the finest pure old sortexed raw rice.
                                     </p>
@@ -858,11 +859,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_Super_Special_Kurnool_Sona.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Super Special Kurnool Sona</a></h5>
+                                    <h5><strong>Super Special Kurnool Sona</strong></h5>
                                     <p>
                                         Discover the exceptional taste and aroma of our super special Kurnool Sona rice variety.
                                     </p>
@@ -871,11 +872,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_HMT_Jeera Rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">HMT Jeera Rice</a></h5>
+                                    <h5><strong>HMT Jeera Rice</strong></h5>
                                     <p>
                                         Delight your senses with the fragrant blend of HMT rice and aromatic jeera.
                                     </p>
@@ -884,11 +885,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/productpage_kurnool_Sortexed_Broken_Rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Kurnool Sona Pure Old Raw Rice</a></h5>
+                                    <h5><strong>Kurnool Sona Pure Old Raw Rice</strong></h5>
                                     <p>
                                         Savor the authentic flavors of Kurnool Sona in our premium pure old raw rice variety.
                                     </p>
@@ -910,11 +911,11 @@
                         <div class="swiper-wrapper">
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_HMT_Jeera_Pure_Old_RawRice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">HMT Jeera Pure Old Raw Rice</a></h5>
+                                    <h5><strong>HMT Jeera Pure Old Raw Rice</strong></h5>
                                     <p>
                                         Immerse yourself in the rich heritage of HMT rice paired with the essence of jeera in our pure old raw rice.
                                     </p>
@@ -924,11 +925,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/productpageSpecial_Sona_Rice-removebg-preview.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Special Sona Rice</a></h5>
+                                    <h5><strong>Special Sona Rice</strong></h5>
                                     <p>
                                         Experience the extraordinary quality and taste of our special Sona rice variety.
                                     </p>
@@ -937,11 +938,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Prouctpage_Kurnool_Sona_Biryani_Rice.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Kurnool Sona Biryani Rice</a></h5>
+                                    <h5><strong>Kurnool Sona Biryani Rice</strong></h5>
                                     <p>
                                         Elevate your biryani dishes with the superior quality and long grains of our Kurnool Sona biryani rice.
                                     </p>
@@ -950,11 +951,11 @@
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <div class="services-style-one">
+                                <div class="services-style-one" style="height:450px;border:solid;border-color:rgb(255, 0, 255)">
                                     <div class="thumb">
                                         <img src="assets/img/products/Productpage_premium_quality_idlyravva.png" alt="Image Not Found">
                                     </div>
-                                    <h5><a href="#">Premium Sorted Rice</a></h5>
+                                    <h5><strong>Premium Sorted Rice</strong></h5>
                                     <p>
                                         Uncompromising quality and perfection come together in our premium sorted rice variety.
                                     </p>
@@ -998,7 +999,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="products.html">Products</a></li>
-                                <li><a href="quality.html">Infrastructure</a></li>
+                                <li><a href="infrastructure.html">Infrastructure</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
@@ -1014,7 +1015,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="products.html">Products</a></li>
-                                    <li><a href="quality.html">Infrastructure</a></li>
+                                    <li><a href="infrastructure.html">Infrastructure</a></li>
                                 </ul>
 
                             </div>
@@ -1114,7 +1115,31 @@
           <img src="assets/img/products/whatsapp.png" alt="whatsapp" class="img-fluid" height="50px" width="50px">
         </div>
     </a>
-    
+  
+     <!-- Scroll Up Button  -->
+     <button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up "></i></button>
+      
+     <script>
+         // Function to scroll to the top of the page
+         function scrollToTop() {
+             window.scrollTo({
+                 top: 0,
+                 behavior: 'smooth' // Optional, smooth scrolling animation
+             });
+         }
+     
+         // Show scroll button when scrolling down
+         window.onscroll = function() {scrollFunction()};
+     
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 document.getElementById("scrollBtn").style.display = "block";
+             } else {
+                 document.getElementById("scrollBtn").style.display = "none";
+             }
+         }
+     </script>
+     
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>

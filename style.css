@@ -81,3 +81,11 @@ Sidebar heading:  20px 'Manrope', sans-serif
 /*
 ** General Styles for HTML tags
 */
+
+@media(min-width:992px) and (max-width:1024px){
+    .headermail{
+        display:none;
+    }
+}
+
+

@@ -13,7 +13,7 @@
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/cow&calf_logo1.png" type="image/x-icon">
-
+    <script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -42,6 +42,22 @@
     width:50px; /* Adjust size as needed */
     height: 50px; /* Adjust size as needed */
 }
+
+
+
+#scrollBtn {
+    display: none; /* Initially hide the button */
+    position: fixed; /* Fix the position of the button */
+    bottom: 20px; /* Adjust the bottom distance */
+    right: 20px; /* Adjust the right distance */
+    z-index: 999; /* Set a high z-index to ensure the button is on top */
+    padding: 10px 15px;
+    background-color: #f3ef1a;
+    color: black;
+    border: none;
+    border-radius:50%;
+    cursor: pointer;
+  }
     </style>
 </head>
 
@@ -144,54 +160,39 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/Cow&Calf_logo.png" class="logo" style="width: 260px; height:  100px;" alt="Logo">
+                    <a class="navbar-brand " href="index.html">
+                        <img src="assets/img/products/cowandcalflogo.png" class="logo " style="width: 90px; height:  75px;" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Main Nav -->
-                <div class="main-nav-content">
+                <div class="main-nav-content m-auto">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
 
-                        <img src="assets/img/logo.png" alt="Logo">
+                        <a href="index.html"><img src="assets/img/products/cowandcalflogo.png" alt="Logo"></a>
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-times"></i>
                         </button>
                         
-                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">ABOUT US</a></li>
+                        <ul class="nav navbar-nav navbar-right " data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="about.html" >ABOUT US</a></li>
                             <li><a href="products.html">PRODUCTS</a></li>
-                            <li><a href="quality.html">INFRASTRUCTURE</a></li>
+                            <li><a href="infrastructure.html">INFRASTRUCTURE</a></li>
                             <li><a href="gallery.html" style="color: green">GALLERY</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
+                            <li><a href="contact.html" >CONTACT US</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
 
-                    <div class="attr-right">
-                        <!-- Start Atribute Navigation -->
-                        <div class="attr-nav">
-                            <ul>
-                                <li class="contact">
-                                    <div class="call">
-                                        <div class="icon">
-                                            <i class="fas fa-comments-alt-dollar"></i>
-                                        </div>
-                                        <div class="info">
-                                            <p>Have any Questions?</p>
-                                            <h6><a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a></h6>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Atribute Navigation -->
-
+                   <div class="d-none d-lg-block " >
+                    <div class="d-flex flex-row justify-content-end ">
+                        <i class="fa-solid fa-envelope ms-5"  style="color:green;"></i>
+                        <h5 class="ms-2 " style="margin-top:-4px"><a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a></h6>
                     </div>
-
+                   </div>
                     <!-- Overlay screen for menu -->
                     <div class="overlay-screen"></div>
                     <!-- End Overlay screen for menu -->
@@ -234,9 +235,9 @@
                     <div class="row">
 
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg11.png" alt="Image Not Found">
                                     <!-- <div class="social">
                                         <i class="fas fa-share-alt"></i>
@@ -267,9 +268,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg22.png" alt="Image Not Found">
                                      
                                 </div>
@@ -281,9 +282,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg33.png" alt="Image Not Found">
                                      
                                 </div>
@@ -295,9 +296,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg33.png" alt="Image Not Found">
                                      
                                 </div>
@@ -309,9 +310,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg44.png" alt="Image Not Found">
                                      
                                 </div>
@@ -323,9 +324,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg55.png" alt="Image Not Found">
                                      
                                 </div>
@@ -336,9 +337,9 @@
                             </div>
                         </div>
                          <!-- Single Item -->
-                         <div class="col-lg-4 farmer-stye-one">
+                         <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg66.png" alt="Image Not Found">
                                      
                                 </div>
@@ -350,9 +351,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg66.png" alt="Image Not Found">
                                      
                                 </div>
@@ -364,9 +365,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg77.png" alt="Image Not Found">
                                      
                                 </div>
@@ -378,9 +379,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg11 (1).png" alt="Image Not Found">
                                      
                                 </div>
@@ -392,9 +393,9 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
+                                <div class="thumb d-flex flex-row justify-content-center">
                                     <img src="assets/img/products/galleryimg10.png" alt="Image Not Found">
                                      
                                 </div>
@@ -406,10 +407,10 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-4 farmer-stye-one">
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
                             <div class="farmer-style-one-item">
-                                <div class="thumb">
-                                    <img src="assets/img/products/galleryimg12.jpg" alt="Image Not Found">
+                                <div class="thumb d-flex flex-row justify-content-center">
+                                    <img src="assets/img/products/galleryimg12.png" alt="Image Not Found">
                                      
                                 </div>
                                 <!-- <div class="info">
@@ -450,7 +451,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="products.html">Products</a></li>
-                                <li><a href="quality.html">Infrastructure</a></li>
+                                <li><a href="infrastructure.html">Infrastructure</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
@@ -466,7 +467,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="products.html">Products</a></li>
-                                    <li><a href="quality.html">Infrastructure</a></li>
+                                    <li><a href="infrastructure.html">Infrastructure</a></li>
                                 </ul>
 
                             </div>
@@ -568,6 +569,30 @@
         </div>
     </a>
     
+ <!-- Scroll Up Button  -->
+ <button id="scrollBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up "></i></button>
+      
+ <script>
+     // Function to scroll to the top of the page
+     function scrollToTop() {
+         window.scrollTo({
+             top: 0,
+             behavior: 'smooth' // Optional, smooth scrolling animation
+         });
+     }
+ 
+     // Show scroll button when scrolling down
+     window.onscroll = function() {scrollFunction()};
+ 
+     function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             document.getElementById("scrollBtn").style.display = "block";
+         } else {
+             document.getElementById("scrollBtn").style.display = "none";
+         }
+     }
+ </script>
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
