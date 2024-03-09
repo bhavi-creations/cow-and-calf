@@ -3988,7 +3988,8 @@ ul.counter-list li:nth-child(2) {
 	content: "";
 	height: 150px;
 	width: 150px;
-	background: var(--color-secondary);
+	/* background: var(--color-secondary); */
+	background: white;
 	z-index: -1;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
