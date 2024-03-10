@@ -5657,59 +5657,59 @@ ul.counter-list li:nth-child(2) {
 }
 
 .gallery-style-one {
-	position: relative;
-	padding-bottom: 30px;
-	overflow: hidden;
+    position: relative;
+    padding-bottom: 10px; /* Adjust the value as needed to reduce space */
+    overflow: hidden;
 }
 
 .gallery-style-one .overlay {
-	background: var(--dark);
-	display: inline-block;
-	position: absolute;
-	z-index: 1;
-	right: 30px;
-	bottom: -80px;
-	padding: 40px 80px;
-	min-width: 65%;
-	transition: all 0.35s ease-in-out;
-	visibility: hidden;
-	opacity: 0;
+    background: var(--dark);
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    /* right: 30px; */
+    bottom: -60px; /* Adjust the value as needed */
+    padding: 0px 0px; /* Adjust the padding as needed */
+    min-width: 65%;
+    transition: all 0.35s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .gallery-style-one .overlay::after {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	content: "";
-	height: 100px;
-	width: 100px;
-	background: url(../img/shape/leaf-2.png);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: contain;
-	z-index: -1;
-	opacity: 0.1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: url(../img/shape/leaf-2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.1;
 }
 
 .gallery-style-one:hover .overlay {
-	bottom: 0;
-	visibility: visible;
-	opacity: 1;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
 }
 
 .gallery-style-one .overlay span {
-	font-family: var(--font-secondary);
-	font-weight: 800;
-	color: var(--white);
-	opacity: 0.95;
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    color: var(--white);
+    opacity: 0.95;
 }
 
 .gallery-style-one .overlay h4 {
-	margin: 0;
+    margin: 0;
 }
 
 .gallery-style-one .overlay a {
-	color: var(--white);
+    color: var(--white);
 }
 
 .carousel-style-one.swiper .swiper-pagination {

@@ -58,6 +58,55 @@
     border-radius:50%;
     cursor: pointer;
   }
+
+
+    .center-text {
+        text-align: center;
+    }
+
+    /* For small devices, adjust margin left to center the container */
+@media (max-width: 767.98px) {
+    .container {
+        margin-left: 0;
+    }
+}
+
+
+
+@media (min-width: 555px) and (max-width: 588px) {
+    .hello{
+        margin-left: 2% !important;
+    }
+  
+}
+
+@media (min-width: 588px) and (max-width: 616px) {
+    .hello{
+        margin-left: 3% !important;
+    }
+  
+}
+
+@media (min-width: 616px) and (max-width: 658px) {
+    .hello{
+        margin-left: 4% !important;
+    }
+  
+}
+
+@media (min-width: 658px) and (max-width: 704px) {
+    .hello{
+        margin-left: 7% !important;
+    }
+  
+}
+@media (min-width: 704px) and (max-width: 768px) {
+    .hello{
+        margin-left: 8% !important;
+    }
+  
+}
+
     </style>
 </head>
 
@@ -170,9 +219,9 @@
                             <li><a href="index.html" style="margin-right:30px"  >Home</a></li>
                             <li><a href="about.html" style="margin-right:30px">ABOUT US</a></li>
                             <li><a href="products.html" style="margin-right:30px">PRODUCTS</a></li>
-                            <li><a href="infrastructure.html" style="margin-right:30px;color: green;">INFRASTRUCTURE</a></li>
-                            <li><a href="gallery.html" style="margin-right:30px;">GALLERY</a></li>
-                            <li><a href="contact.html"  >CONTACT US</a></li>
+                            <li><a href="infrastructure.html" style="margin-right:30px">INFRASTRUCTURE</a></li>
+                            <li><a href="gallery.html" style="color: green; margin-right:30px">GALLERY</a></li>
+                            <li><a href="contact.html" >CONTACT US</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -199,9 +248,9 @@
      <!-- Start Breadcrumb 
     ============================================= -->
 
-    <div>
-        <img  src="assets/img/new_images/INFRASTRUCTURE.jpg" style=" width: 3000px; "  alt="">
-    </div>
+    <!-- <div>
+        <img  src="assets/img/products/gallery_title_image.png" style=" width: 3000px; "  alt="">
+    </div> -->
     <!-- End Breadcrumb -->
 
     <!-- Start Services 
@@ -218,40 +267,68 @@
     ============================================= -->
 
     <!-- End Brand -->
+    <div class="farmer-area default-padding  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
 
-    <div class="container mt-5">
-        <div class="row d-flex flex-row justify-content-center">
-
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img src="assets/img/new_images/image 11.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img src="assets/img/new_images/imgaes 02.png" alt="">
-
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img src="assets/img/new_images/images 04.png" alt="">
-
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img src="assets/img/new_images/iimage 05.png" alt="">
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <img src="assets/img/new_images/image 07.png" alt="">
-            </div>
+                        <h3 class="text-center mb-5" style="color: rgb(8, 97, 8); font-weight: 800;">Gallery</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <a href="gallery.html" class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-success mb-5 center-text">Images</button>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                    <a href="gallery_video.html" class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-success">Videos</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
 
-            <div class="col-sm-12 col-4 col-lg-12 d-flex justify-content-center">
-                <div class=" d-none d-md-block">
-                    <img src="assets/img/new_images/images 09.png" alt="" style="height: 400px;" class="img-fluid" >
+                        <div class="container" style="text-align: center;">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-md-12">
+                                    <video src="assets/img/new_images/gallery/GNEGuhmvSaxyyUIDAMl3gr7pe-MqbmdjAAAF.mp4" muted autoplay loop playsinline style="max-width: 100%; height: auto; display: inline-block;" class="img-fluid"></video>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                  
+                       
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-6 col-lg-4 farmer-stye-one">
+                            <div class="farmer-style-one-item">
+                                <!-- <div class="thumb d-flex flex-row justify-content-center"> -->
+                                    <!-- <img src="assets/img/gallery/gallery_image_7 (4).png" alt="Image Not Found"> -->
+                                     
+                                </div>
+                                <!-- <div class="info">
+                                    <span>Farmer of potato</span>
+                                    <h4><a href="#">Sarah Albert</a></h4>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
- 
+            <div class="shape-extra">
+                <img src="assets/img/shape/18.png" alt="Image Not Found">
+            </div>
         </div>
-     </div>
+    </div>
      <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light mt-5" style="background-image: url(assets/img/shape/brush-down.png);">
+    <footer class="bg-dark text-light" style="background-image: url(assets/img/shape/brush-down.png);">
         <div class="container">
             <div class="f-items default-padding" >
                 <div class="row">
@@ -259,7 +336,7 @@
                     <!-- Single Itme -->
                     <div class="  col-lg-4 col-md-4 col-sm-12 item  d-flex  justify-content-start " >            
                         <div class="footer-item   "  >
-                            <img class="logo img_pot"  src="assets/img/new_images/Logo 2.png" style=" width: 312px; height: 130px; " alt="Logo">
+                            <img class="logo img_pot"  src="assets/img/cow&calf_logo1.png" style=" width: 312px; height: 130px; " alt="Logo">
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -324,7 +401,7 @@
                                     </div>
                                     <div class="content">
                                         <strong>Email:</strong>
-                                      <a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a>
+                                       <a href="mailto:cowcaulf@gmail.com" target="_blank" rel="noopener noreferrer" style="text-transform:lowercase">cowcaulf@gmail.com</a>
                                     </div>
                                 </li>
                                 <li>
@@ -381,6 +458,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+
     <!-- WhatsApp   -->
 
     <a href="https://api.whatsapp.com/send?phone=8842374172" target="_blank">
