@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Recipients
         $mail->setFrom('cowcaulf@gmail.com', 'Cow & Calf'); // Your Gmail email and name
-        $mail->addAddress('cowcaulf@gmail.com', 'Cow & Calf'); // Recipient's email and name
+        $mail->addAddress('info@cowandcalf.com', 'Cow & Calf'); // Recipient's email and name
 
         // Content
         $mail->isHTML(true);
